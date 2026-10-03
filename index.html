@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>StudentStay – Student housing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="wrap">
+  <nav aria-label="Main">
+    <a href="#" class="logo">Student<span>Stay</span></a>
+    <ul>
+      <li class="hide"><a href="#listings">Find a place</a></li>
+      <li class="hide"><a href="#trust">Safety</a></li>
+      <li class="hide">
+        <a href="#points">Points</a>
+      </li>
+      <li class="hide"><a href="#guide">Guide</a></li>
+      <li>
+        <a href="#join" class="btn ghost">Join</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="wrap hero">
+    <div>
+      <h1>Housing from students, for students.</h1>
+      <p class="lead">Find a short or long lease with other verified students. Pay with cash or with the points you earn on StudentStay.</p>
+    </div>
+
+    <form class="search" action="#listings" method="get" aria-labelledby="sh">
+      <h2 id="sh">Find your next place</h2>
+
+      <label for="where">Campus or city</label>
+      <input id="where" name="where" type="text" placeholder="e.g. Montréal, Concordia">
+
+      <label for="len">Lease length</label>
+      <select id="len" name="length">
+        <option>Short term (1–4 months)</option>
+        <option>Long term (8–12 months)</option>
+        <option>Any length</option>
+      </select>
+
+      <label id="paylbl">Pay with</label>
+      <div class="seg" role="radiogroup" aria-labelledby="paylbl">
+        <input type="radio" name="pay" value="money" id="p1" checked>
+        <label for="p1">Money</label>
+
+        <input type="radio" name="pay" value="points" id="p2">
+        <label for="p2">Points</label>
+
+        <input type="radio" name="pay" value="either" id="p3">
+        <label for="p3">Either</label>
+      </div>
+
+      <button class="btn" type="submit">Search listings</button>
+    </form>
+  </section>
+
+  <section id="listings" class="wrap">
+    <div class="sec-head">
+      <h2>Open this month</h2>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="thumb t1"><span class="tag">Short term · 3 months</span></div>
+        <div class="body">
+          <h3>Sunny room near campus</h3>
+          <div class="meta">Shared 3-bed · 8 min walk to class</div>
+          <div class="verified">Host ID verified</div>
+          <div class="price">
+            $520 <span class="or">/</span> <span class="pts">1,040 pts</span> <small>per month</small>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t2">
+          <span class="tag">Long term · 12 months</span>
+        </div>
+        <div class="body">
+          <h3>Private studio, Plateau</h3>
+          <div class="meta">Furnished · utilities included</div>
+          <div class="verified">Host ID verified</div>
+          <div class="price">$780 <span class="or">/</span> <span class="pts">1,560 pts</span> <small>per month</small></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t3"><span class="tag">Short term · summer</span></div>
+        <div class="body">
+          <h3>Sublet for the summer term</h3>
+          <div class="meta">2-bed · metro at the door</div>
+          <div class="verified">Host ID verified</div>
+          <div class="price">$450 <span class="or">/</span> <span class="pts">900 pts</span> <small>per month</small></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="trust" class="wrap">
+    <div class="trust">
+      <div class="trust-top">
+        <h2>Every person on StudentStay is a verified student.</h2>
+        <div class="idstack" aria-hidden="true">
+          <div class="id-back">Student ID<br>checked</div>
+          <div class="id-front">Verified<br>student</div>
+        </div>
+      </div>
+
+      <ul>
+        <li>
+          <h3>Student ID check</h3>
+          <p>We confirm your student ID before you can post or book. No ID, no listing.</p>
+        </li>
+        <li>
+          <h3>Secure login</h3>
+          <p>Two-step sign-in protects your account, and your documents stay encrypted.</p>
+        </li>
+        <li>
+          <h3>Fair, clear prices</h3>
+          <p>Student-set rents with no agent fees. You see the full cost before you commit.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="points" class="wrap">
+    <div class="points">
+      <div>
+        <h2>Short on cash? Pay with points.</h2>
+        <p>Points work like money on StudentStay. Use them toward rent or a deposit, or top up the difference with cash.</p>
+        <p>
+          <a class="btn" href="#join">Create a free account</a>
+        </p>
+      </div>
+
+      <div class="earn">
+        <h3>Ways to earn points</h3>
+        <ul>
+          <li>Verify your student ID</li>
+          <li>Leave a review after your stay</li>
+          <li>Refer a friend who signs a lease</li>
+          <li>Host a room for a term
+            <ul>
+              <li>Short-term sublets</li>
+              <li>Full-year leases</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" class="wrap block">
+    <div class="two">
+      <nav class="vnav" aria-label="Guide sections">
+        <ul>
+          <li><a href="#steps" class="active">How to rent</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 id="steps">How to rent</h2>
+        <ol>
+          <li>Create your account
+            <ol>
+              <li>Enter your name and student email</li>
+              <li>Upload a photo of your student ID</li>
+              <li>Wait for the ID check to finish</li>
+            </ol>
+          </li>
+          <li>Find a place and send a request</li>
+          <li>Sign the lease and pay with money or points</li>
+        </ol>
+
+        <h2 id="glossary" class="gap">Glossary</h2>
+        <dl>
+          <dt>Short term</dt>
+          <dd>A lease of one to four months, often a summer or exchange term.</dd>
+
+          <dt>Long term</dt>
+          <dd>A lease of eight to twelve months, matching the school year.</dd>
+
+          <dt>Points</dt>
+          <dd>Credits you earn on StudentStay and spend on rent or deposits.</dd>
+
+          <dt>Verified student</dt>
+          <dd>A member whose student ID has passed our check.</dd>
+        </dl>
+
+        <h2 id="pricing" class="gap">Pricing</h2>
+        <table border="1">
+          <tr>
+            <th>Lease type</th>
+            <th>Rent from</th>
+            <th>How you can pay</th>
+          </tr>
+          <tr>
+            <td>Short term</td>
+            <td>$450 / 900 pts per month</td>
+            <td>
+              <table border="1">
+                <tr>
+                  <th>Method</th>
+                  <th>Accepted</th>
+                </tr>
+                <tr>
+                  <td>Money</td>
+                  <td>Card or bank transfer</td>
+                </tr>
+                <tr>
+                  <td>Points</td>
+                  <td>Your points balance</td>
+                </tr>
+                <tr>
+                  <td>Mix</td>
+                  <td>Points plus a cash top-up</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Long term</td>
+            <td>$780 / 1,560 pts per month</td>
+            <td>Same options as short term</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="wrap block">
+    <h2>Create your account</h2>
+
+    <form class="join" action="#" method="post">
+      <fieldset class="f-about">
+        <legend>About you</legend>
+        <p>
+          <label for="fname">Full name</label>
+          <input type="text" id="fname" name="fullname" required>
+        </p>
+
+        <p>
+          <label for="email">Student email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="uni">University</label>
+          <select id="uni" name="university">
+            <option>Concordia</option>
+            <option>McGill</option>
+            <option>Université de Montréal</option>
+            <option>UQAM</option>
+            <option>Other</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset class="f-want">
+        <legend>What you are looking for</legend>
+
+        <p class="grp">Lease length</p>
+        <input type="radio" id="l-short" name="lease" value="short" checked>
+        <label for="l-short">Short term</label>
+
+        <input type="radio" id="l-long" name="lease" value="long">
+        <label for="l-long">Long term</label>
+
+        <p class="grp">Must have</p>
+        <input type="checkbox" id="a1" name="amenity" value="furnished">
+        <label for="a1">Furnished</label>
+
+        <input type="checkbox" id="a2" name="amenity" value="utilities">
+        <label for="a2">Utilities included</label>
+
+        <input type="checkbox" id="a3" name="amenity" value="pets">
+        <label for="a3">Pet friendly</label>
+
+        <input type="checkbox" id="a4" name="amenity" value="metro">
+        <label for="a4">Near the metro</label>
+
+        <input type="checkbox" id="a5" name="amenity" value="bathroom">
+        <label for="a5">Private bathroom</label>
+
+        <input type="checkbox" id="a6" name="amenity" value="laundry">
+        <label for="a6">Laundry</label>
+      </fieldset>
+
+      <button class="btn" type="submit">Create account</button>
+      <button class="btn ghost" type="reset">Clear form</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 StudentStay</span>
+    <span>Contact: hello@studentstay.example</span>
+  </div>
+</footer>
+
+</body>
+</html>
